@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DefinitivoV2.Vista.RectanguloView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame  Padding="24" Margin="20,20" CornerRadius="15" BackgroundColor="Pink">
+                <Label FontSize="25" HorizontalTextAlignment="Center" TextColor="Black"  Text="Calcular rectangulo"/>
+            </Frame>
+            <Label Margin="-15,0,0,0"  Padding="20" FontSize="20" TextColor="Black" Text="Ingrese la longitud"/>
+            <Entry Text="{Binding Longitud}" Keyboard="Numeric" Placeholder="longitud(cm)" />
+
+            <Label Margin="-15,0,0,0"  Padding="20" FontSize="20" TextColor="Black" Text="Ingrese el ancho"/>
+            <Entry Text="{Binding Ancho}" Keyboard="Numeric" Placeholder="longitud(cm)" />
+
+            <Label Margin="-15,0,0,0"  Padding="20" FontSize="20" TextColor="Black" Text="Resultado"/>
+            <Entry Text="{Binding Resultado}" Keyboard="Numeric" Placeholder="longitud(cm)" IsEnabled="False" />
+
+            <Button Command="{Binding CalcularCommand}" Margin="20,20" Text="Calcular" Background="Black" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
